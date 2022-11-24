@@ -60,7 +60,7 @@ export class CalculatorComponent implements OnInit, OnChanges {
   }
   kaput() {
     if (this.activeColumn === 'score') {
-      const kaputAudio = new Audio('../../../assets/sounds/kaput.mp3');
+      const kaputAudio = new Audio('../../../assets/sounds/kaput2.mp3');
       kaputAudio.play();
       this.addedNum = 'K';
       this.isKaput = true;
