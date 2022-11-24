@@ -1,0 +1,16 @@
+<div class='column'>
+  <div class='column-title' [ngStyle]="{'background-color' : color}">
+    <h3>{{columnTitle}}</h3>
+  </div>
+  <div class="scores-block">
+    <div class='scores' *ngFor="let score of scoreArray">
+      <p>{{score}}
+        <span *ngIf="!!quanshCrac">
+          <span *ngIf='quanshCrac==="quansh"'>-</span>
+          <span *ngIf='quanshCrac==="srac"'>+</span>
+        </span>
+      </p>
+      <div class="underline"></div>
+    </div>
+  </div>
+</div>

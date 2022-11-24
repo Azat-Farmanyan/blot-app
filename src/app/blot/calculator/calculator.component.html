@@ -1,0 +1,33 @@
+<div class='calculator'>
+  <div class="container">
+    <div [ngStyle]="{'background-color' : calcAreaColor}" class="btn calc-area">
+      <span *ngIf='activeColumn!=="score"'>{{currentColumnSum}}</span>
+      <p *ngIf="!!addedNum">
+        <span *ngIf='activeColumn!=="score"'> {{' '}}{{operator}}</span>
+        <span>{{addedNum}}</span>
+      </p>
+    </div>
+    <div (click)="save()" class="btn save">Պահպանել</div>
+    <div (click)="addNum(7)" class="btn num-btn seven">7</div>
+    <div (click)="addNum(8)" class="btn num-btn eight">8</div>
+    <div (click)="addNum(9)" class="btn num-btn nine">9</div>
+    <div (click)="addNum(4)" class="btn num-btn four">4</div>
+    <div (click)="addNum(5)" class="btn num-btn five">5</div>
+    <div (click)="addNum(6)" class="btn num-btn six">6</div>
+    <div (click)="addNum(1)" class="btn num-btn one">1</div>
+    <div (click)="addNum(2)" class="btn num-btn two">2</div>
+    <div (click)="addNum(3)" class="btn num-btn three">3</div>
+    <div (click)="addNum(0)" class="btn num-btn zero">0</div>
+    <div (click)="operator = '+'" class="btn plus">+</div>
+    <div (click)="operator = '-'" class="btn minus">-</div>
+    <div (click)="addedNum = ''" class="btn cancel">
+      <img src="../../../assets/icons/gridicons_cross.png" alt="cross">
+    </div>
+    <div (click)="cancel()" class="btn backspace">
+      <img src="../../../assets/icons/ic_sharp-keyboard-backspace.png" alt="backspace">
+    </div>
+    <div (click)="kaput()" class="btn kaput">K</div>
+    <div (click)="quansh()" class="btn quansh">Q</div>
+    <div (click)="srac()" class="btn srac">S</div>
+  </div>
+</div>

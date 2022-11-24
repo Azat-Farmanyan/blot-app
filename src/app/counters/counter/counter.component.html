@@ -1,0 +1,15 @@
+<div class="pad">
+  <div class="card-icon">
+    <img [src]="'../../../assets/icons/'+iconName" [alt]="iconName">
+  </div>
+  <div class="up-count" (click)="increment()">
+    <img class='counter' src="../../assets/icons/arrow-up.png" alt="counter">
+  </div>
+  <h1 class='count'>{{counter}}</h1>
+  <div class="down-count" (click)="decrement()">
+    <img class='counter' src="../../assets/icons/arrow-down.png" alt="counter">
+  </div>
+  <div class='reset-button' (click)="resetCounter()">
+    <img src="../../../assets/icons/undo-arrow.png" alt="">
+  </div>
+</div>

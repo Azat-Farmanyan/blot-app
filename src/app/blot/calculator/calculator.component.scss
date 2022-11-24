@@ -1,0 +1,133 @@
+.calculator {
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "calc-area calc-area calc-area calc-area seven eight nine"
+      "plus plus minus minus four five six"
+      "save save save save one two three"
+      "kaput quansh quansh srac backspace zero cancel";
+
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 21px;
+  }
+}
+
+.calc-area {
+  grid-area: calc-area;
+  font-size: 35px;
+  line-height: 29px;
+}
+.plus {
+  grid-area: plus;
+  background: var(--black);
+  color: var(--white);
+  font-size: 35px;
+}
+.minus {
+  grid-area: minus;
+  background: var(--black);
+  color: var(--white);
+  font-size: 35px;
+}
+.save {
+  grid-area: save;
+  background: var(--green);
+  color: var(--white);
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.cancel {
+  grid-area: cancel;
+  background-color: var(--red);
+  & img {
+    height: 32px;
+  }
+}
+
+.backspace {
+  grid-area: backspace;
+  background-color: var(--gray);
+  & img {
+    height: 35px;
+  }
+}
+
+.kaput {
+  grid-area: kaput;
+  color: var(--white);
+  background-color: var(--violet);
+}
+
+.quansh {
+  grid-area: quansh;
+  color: var(--white);
+  background-color: var(--dark-orange);
+}
+
+.srac {
+  grid-area: srac;
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.btn {
+  cursor: pointer;
+  // background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  min-height: 65px;
+}
+.num-btn {
+  background-color: var(--white);
+}

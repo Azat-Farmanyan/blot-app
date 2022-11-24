@@ -1,0 +1,14 @@
+<div class="blot-block">
+  <div class="columns">
+    <app-blot-column class='cursor' (click)='setActive("#F2AA4C","we")' [scoreArray]="scoreService.we" color="#F2AA4C"
+      [columnTitle]="'Մենք'">
+    </app-blot-column>
+    <app-blot-column class='cursor' (click)='setActive("#4CACF2","you")' [scoreArray]="scoreService.you" color="#4CACF2"
+      [columnTitle]="'Դուք'"></app-blot-column>
+    <app-blot-column class='cursor' (click)='setActive("#BF0000","score")' [scoreArray]="scoreService.score"
+      color="#BF0000" [quanshCrac]="quanshCrac" [columnTitle]="'Հաշիվը'"></app-blot-column>
+  </div>
+  <app-calculator (quanshsrac)="quanshCrac=$event" [activeColumn]="activeColumn" [currentColumnSum]="clickedColumnSum"
+    [calcAreaColor]="calcAreaColor">
+  </app-calculator>
+</div>

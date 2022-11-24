@@ -1,0 +1,70 @@
+.pad {
+  // width: 100px;
+  position: relative;
+  height: 280px;
+  background-color: var(--white);
+  margin: 5px;
+  border-radius: 10px;
+  .card-icon img {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+  }
+  .up-count,
+  .down-count {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    background-color: var(--orange);
+    cursor: pointer;
+    &:active {
+      background-color: rgb(255, 194, 114);
+    }
+    & img {
+      width: 40px;
+    }
+  }
+  .up-count {
+    top: 0;
+    border-radius: 10px 10px 0 0;
+  }
+  .down-count {
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  .counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    margin: 0 auto;
+  }
+  .count {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--black);
+  }
+  .down-counter {
+    transform: rotate(180deg);
+  }
+  .reset-button img {
+    cursor: pointer;
+    position: absolute;
+    bottom: -70px;
+    left: 38%;
+    width: 40px;
+    transition: all 0.2s ease;
+    &:active {
+      transform: rotate(-60deg);
+    }
+  }
+}
