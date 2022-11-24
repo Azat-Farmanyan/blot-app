@@ -25,14 +25,14 @@ export class ScoresService {
   }
 
   addWe(newScore: number = 0) {
-    if (this.we.length > 5) {
-      this.we = this.we.splice(this.we.length - 5);
+    if (this.we.length > 4) {
+      this.we = this.we.splice(this.we.length - 4);
     }
     this.we.push(newScore);
   }
   addYou(newScore: number = 0) {
-    if (this.you.length > 5) {
-      this.you = this.you.splice(this.you.length - 5);
+    if (this.you.length > 4) {
+      this.you = this.you.splice(this.you.length - 4);
     }
     this.you.push(newScore);
   }
