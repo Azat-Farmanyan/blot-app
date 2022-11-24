@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ScoresService {
   we = [0];
   you = [0];
-  score: Array<any> = [8];
+  score: Array<any> = [0];
   activeColumn = '';
   constructor() {}
 

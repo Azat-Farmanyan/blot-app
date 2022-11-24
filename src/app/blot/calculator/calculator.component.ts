@@ -36,7 +36,6 @@ export class CalculatorComponent implements OnInit, OnChanges {
       // red
       if (this.calcAreaColor === '#BF0000') {
         this.scoreService.addNewScore(this.addedNum);
-        this.currentColumnSum = 8;
         this.quanshsrac.emit('');
       } else {
         let result = 0;
