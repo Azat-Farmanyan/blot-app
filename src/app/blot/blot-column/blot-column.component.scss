@@ -8,6 +8,12 @@
   border-radius: 5px;
   padding: 10px;
   padding-top: 40px;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   .scores-block {
     width: 100%;
     margin: 0 auto;
@@ -36,6 +42,7 @@
     align-items: center;
     width: 100%;
     margin: 10px 0;
+
     .underline {
       border: 1px solid #acacac;
       width: 100%;
