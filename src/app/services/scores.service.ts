@@ -56,4 +56,11 @@ export class ScoresService {
   private getLastElem(array: any) {
     return array[array.length - 1];
   }
+
+  clearScores() {
+    this.we = [0];
+    this.you = [0];
+    this.score = [0];
+    this.activeColumn = '';
+  }
 }

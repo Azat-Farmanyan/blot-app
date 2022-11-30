@@ -2,5 +2,18 @@
   <ul class='nav'>
     <li class='nav-item' routerLink="counter" routerLinkActive="active">ՀԱՇՎԻՉ</li>
     <li class='nav-item' routerLink="blot" routerLinkActive="active">ԲԼՈՏ</li>
+    <li (click)="navToggle()" class="burger nav-item">
+      <img [src]="!burgerIsOpen?burgerImgPath:burgerCloseImgPath" alt="burgerIcon">
+    </li>
   </ul>
 </header>
+
+<div *ngIf="burgerIsOpen" class='menu'>
+  <ul class='menu-nav'>
+    <li (click)="clearBLotScore()" class='menu-nav-item'>
+      <img src="../../../assets/icons/close-burger.png" alt="">
+      <p>Ջնջել բլոտի հաշիվը</p>
+    </li>
+
+  </ul>
+</div>

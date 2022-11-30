@@ -4,6 +4,7 @@ import { BlotComponent } from './blot/blot.component';
 import { CountersComponent } from './counters/counters.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'blot' },
   { path: 'counter', component: CountersComponent },
   { path: 'blot', component: BlotComponent },
 ];
