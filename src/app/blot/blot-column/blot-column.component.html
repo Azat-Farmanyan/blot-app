@@ -4,7 +4,9 @@
   </div>
   <div class="scores-block">
     <div class='scores' *ngFor="let score of scoreArray">
-      <p>{{score}}
+      <p [ngClass]="{'big-font-size':color=='#BF0000'}">
+        {{score}}
+        <!-- {{color}} -->
         <span *ngIf="!!quanshCrac">
           <span *ngIf='quanshCrac==="quansh"'>-</span>
           <span *ngIf='quanshCrac==="srac"'>+</span>
@@ -13,4 +15,5 @@
       <div class="underline"></div>
     </div>
   </div>
+  <app-card-type *ngIf="color=='#BF0000'"></app-card-type>
 </div>

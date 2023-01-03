@@ -9,6 +9,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { BlotComponent } from './blot/blot.component';
 import { BlotColumnComponent } from './blot/blot-column/blot-column.component';
 import { CalculatorComponent } from './blot/calculator/calculator.component';
+import { CardTypeComponent } from './blot/card-type/card-type.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CalculatorComponent } from './blot/calculator/calculator.component';
     BlotComponent,
     BlotColumnComponent,
     CalculatorComponent,
+    CardTypeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

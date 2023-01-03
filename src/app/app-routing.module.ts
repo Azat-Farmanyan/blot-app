@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'blot' },
   { path: 'counter', component: CountersComponent },
   { path: 'blot', component: BlotComponent },
+  { path: '**', redirectTo: '/blot' },
 ];
 
 @NgModule({
